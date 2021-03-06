@@ -2,5 +2,26 @@
   "name": "Messenger Extension for Chrome",
   "version": "1.0",
   "description": "Build an Extension!",
-  "manifest_version": 3
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "messenger30.png",
+      "48": "messenger48.png",
+      "128": "messenger128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "messenger30.png",
+    "48": "messenger48.png",
+    "128": "messenger128.png"
+  },
+  "manifest_version": 2
 }
+
